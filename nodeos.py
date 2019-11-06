@@ -24,15 +24,15 @@ def jsonArg(a):
     return " '" + json.dumps(a) + "' "
 
 def run(args):
-    print('bios-boot-tutorial.py:', args)
+    print('nodeos.py:', args)
     logFile.write(args + '\n')
     if subprocess.call(args, shell=True):
-        print('bios-boot-eosforce.py: exiting because of error')
+        print('nodeos.py: exiting because of error')
         sys.exit(1)
 
 def retry(args):
     while True:
-        print('bios-boot-eosforce.py:', args)
+        print('nodeos.py:', args)
         logFile.write(args + '\n')
         if subprocess.call(args, shell=True):
             print('*** Retry')
@@ -40,7 +40,7 @@ def retry(args):
             break
 
 def background(args):
-    print('bios-boot-eosforce.py:', args)
+    print('nodeos.py:', args)
     logFile.write(args + '\n')
     return subprocess.Popen(args, shell=True)
 
@@ -326,6 +326,9 @@ args = parser.parse_args()
 #args.keosd = args.root + args.keosd
 #args.contracts_dir = args.root + args.contracts_dir
 
+
+subprocess.call('touch '+args.log_path, shell=True)
+
 logFile = open(args.log_path, 'a')
 
 logFile.write('\n\n' + '*' * 80 + '\n\n\n')
@@ -340,9 +343,8 @@ for (flag, command, function, inAll, help) in commands:
             function()
 
 
-
 if not haveCommand:
-    # print('bios-boot-eosforce.py: Tell me what to do. -a does almost everything. -h shows options.')
+    # print('nodeos.py: Tell me what to do. -a does almost everything. -h shows options.')
     if os.path.isdir(os.path.abspath(args.config_dir)):
         restart()
     else:
