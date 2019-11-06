@@ -1,4 +1,4 @@
-# EOSIO Quickstart Web IDE for decentralized applications ![EOSIO Alpha](https://img.shields.io/badge/EOSIO-Alpha-blue.svg)
+# EOSFORCE Quickstart Web IDE for decentralized applications ![EOSIO Alpha](https://img.shields.io/badge/EOSIO-Alpha-blue.svg)
 
 [![Software License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](./LICENSE)
 
@@ -14,9 +14,9 @@ We hope you will find this project useful and welcome feedback on future improve
 
 1. Fork this repo to your personal GitHub account so that you can save your work into your personal Github account.
 
-2. Point your browser to the following URL https://gitpod.io/#https://github.com/your-github-account/eosio-web-ide to start the IDE. You will be automatically prompted to create a Gitpod account (all types of Gitpod accounts (including free) will work). You can also choose to provide multiple developers push access to your personal github fork of this repo to collaborate with them (one developer working on the smart contract (C++) while the other working on the front-end decentralized application (EOSJS), etc.). Each such developer sharing access to the forked repo will get their own copy of the EOSIO blockchain components to enable independent development.
+2. Point your browser to the following URL https://gitpod.io/#https://github.com/your-github-account/eosforce-web-ide to start the IDE. You will be automatically prompted to create a Gitpod account (all types of Gitpod accounts (including free) will work). You can also choose to provide multiple developers push access to your personal github fork of this repo to collaborate with them (one developer working on the smart contract (C++) while the other working on the front-end decentralized application (EOSJS), etc.). Each such developer sharing access to the forked repo will get their own copy of the EOSIO blockchain components to enable independent development.
 
-You can test drive the system by accessing the IDE at https://gitpod.io/#https://github.com/EOSIO/eosio-web-ide (however you will not be able to save your work into the EOSIO/eosio-web-ide Github repository)
+You can test drive the system by accessing the IDE at https://gitpod.io/#https://github.com/EOSIO/eosforce-web-ide (however you will not be able to save your work into the EOSIO/eosio-web-ide Github repository)
 
 # Instructions
 
@@ -31,7 +31,7 @@ To open a terminal, use the Terminal drop-down menu in the IDE user interface.
 The source code for the sample smartcontract is at `contract/talk.cpp` within the IDE. To compile the contract, run this in a terminal:
 
 ```
-eosio-cpp contract/talk.cpp
+eoforce-cpp contract/talk.cpp
 
 ```
 
