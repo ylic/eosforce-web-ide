@@ -284,7 +284,7 @@ def init():
 parser = argparse.ArgumentParser()
 
 commands = [
-    ('k', 'kill',           stepKillAll,                False,   "Kill all nodeos and keosd processes"),
+    ('s', 'stop',           stepKillAll,                False,   "Kill all nodeos and keosd processes"),
     ('c', 'clearData',      clearData,                  False,   "Clear all Data, del ./nodes and ./wallet"),
     ('r', 'restart',        restart,                    False,   "Restart all nodeos and keosd processes"),
     ('g', 'mkGenesis',      stepMakeGenesis,            True,    "Make Genesis"),
