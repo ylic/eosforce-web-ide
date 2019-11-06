@@ -126,8 +126,8 @@ def listProducers():
     run(args.cleos + 'get table eosio eosio bps')
 
 def stepKillAll():
-    run('killall keosd nodeos || true')
-    sleep(.5)
+    run('killall -2 keosd nodeos || true')
+    sleep(1)
 
 def stepStartWallet():
     run('rm -rf ' + os.path.abspath(args.wallet_dir))
