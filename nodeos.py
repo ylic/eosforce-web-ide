@@ -252,10 +252,6 @@ def clearData():
 def restart():
     stepKillAll()
     stepMkConfig()
-    # stepStartWallet()
-    # stepCreateWallet()
-    # importKeys()
-
     background(args.keosd + ' --unlock-timeout %d  --wallet-dir %s' % (unlockTimeout, os.path.abspath(args.wallet_dir)))
     sleep(.4)
     with open('./data/pw', mode='r') as f:
@@ -318,14 +314,6 @@ for (flag, command, function, inAll, help) in commands:
         parser.add_argument('--' + command, action='store_true', help=help, dest=command)
 
 args = parser.parse_args()
-
-#args.cleos += '--url http://127.0.0.1:%d ' % 8001
-
-#args.cleos = args.root + args.cleos
-#args.nodeos = args.root + args.nodeos
-#args.keosd = args.root + args.keosd
-#args.contracts_dir = args.root + args.contracts_dir
-
 
 if not os.path.isdir(os.path.abspath(args.root)):
     subprocess.call('mkdir data ', shell=True)
