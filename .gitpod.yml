@@ -3,6 +3,96 @@ image: ylic/eosforce-web-ide:v0.1.0
 ports:
 - port: 8888
   onOpen: ignore
+- port: 8889
+  onOpen: ignore
+- port: 8890
+  onOpen: ignore
+- port: 8891
+  onOpen: ignore
+- port: 8892
+  onOpen: ignore
+- port: 8893
+  onOpen: ignore
+- port: 8894
+  onOpen: ignore
+- port: 8895
+  onOpen: ignore
+- port: 8896
+  onOpen: ignore
+- port: 8897
+  onOpen: ignore
+- port: 8898
+  onOpen: ignore
+- port: 8899
+  onOpen: ignore
+- port: 8900
+  onOpen: ignore
+- port: 8901
+  onOpen: ignore
+- port: 8902
+  onOpen: ignore
+- port: 8903
+  onOpen: ignore
+- port: 8904
+  onOpen: ignore
+- port: 8905
+  onOpen: ignore
+- port: 8906
+  onOpen: ignore
+- port: 8907
+  onOpen: ignore
+- port: 8908
+  onOpen: ignore
+- port: 8909
+  onOpen: ignore
+- port: 8910
+  onOpen: ignore
+- port: 9001
+  onOpen: ignore
+- port: 9002
+  onOpen: ignore
+- port: 9003
+  onOpen: ignore
+- port: 9004
+  onOpen: ignore
+- port: 9005
+  onOpen: ignore
+- port: 9006
+  onOpen: ignore
+- port: 9007
+  onOpen: ignore
+- port: 9008
+  onOpen: ignore
+- port: 9009
+  onOpen: ignore
+- port: 9010
+  onOpen: ignore
+- port: 9011
+  onOpen: ignore
+- port: 9012
+  onOpen: ignore
+- port: 9013
+  onOpen: ignore
+- port: 9014
+  onOpen: ignore
+- port: 9015
+  onOpen: ignore
+- port: 9016
+  onOpen: ignore
+- port: 9017
+  onOpen: ignore
+- port: 9018
+  onOpen: ignore
+- port: 9019
+  onOpen: ignore
+- port: 9020
+  onOpen: ignore
+- port: 9021
+  onOpen: ignore
+- port: 9022
+  onOpen: ignore
+- port: 9023
+  onOpen: ignore
 
 tasks:
 - before: cd webapp
@@ -10,3 +100,5 @@ tasks:
   command: nginx -c $PWD/nginx.conf; npx webpack-dev-server
 - before: cd ~
   command: ./start.sh
+
+
