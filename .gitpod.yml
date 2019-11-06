@@ -8,3 +8,5 @@ tasks:
 - before: cd webapp
   init: yarn
   command: nginx -c $PWD/nginx.conf; npx webpack-dev-server
+- before: cd ~
+  command: ./start.sh
