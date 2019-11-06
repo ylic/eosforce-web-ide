@@ -327,7 +327,8 @@ args = parser.parse_args()
 #args.contracts_dir = args.root + args.contracts_dir
 
 
-subprocess.call('touch '+args.log_path, shell=True)
+if not os.path.isdir(os.path.abspath(args.root)):
+    subprocess.call('mkdir data ', shell=True)
 
 logFile = open(args.log_path, 'a')
 
