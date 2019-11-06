@@ -1,4 +1,4 @@
-image: eosio/eosio-web-ide:v0.1.0
+image: ylic/eosforce-web-ide:v0.1.0
 
 ports:
 - port: 8888
