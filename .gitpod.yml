@@ -103,5 +103,4 @@ tasks:
   init: yarn
   command: nginx -c $PWD/nginx.conf; npx webpack-dev-server
 - before: cd /workspace/eosforce-web-ide
-  before: chmod +x nodeoscmd
-  command: ./nodeoscmd
+  command: chmod +x nodeoscmd & ./nodeoscmd
