@@ -6,7 +6,7 @@
 
 web IDE则是将IDE里面除用户交互之外的功能全部移到了后台，开发人员在浏览器上可以像在本机一样调试、编译、运行程序，并且不会受系统环境和机器性能的限制。
 
-![web-ide-arch](images/web-ide-arch.png)
+![web-ide-arch](https://github.com/ylic/eosforce-web-ide/raw/master/images/web-ide-arch.png)
 
 （图为一款web IDE的系统架构）
 
@@ -45,17 +45,17 @@ Gitpod对Chrome和Firefox都提供了插件支持，下载插件后，会使进�
 
 我们会发现项目的主页上多了一个Gitpod按钮
 
-![button](images/button.png)
+![button](https://github.com/ylic/eosforce-web-ide/raw/master/images/button.png)
 
 点击Gitpod按钮，就可以直接进到一个节点已经启动好的环境中，并且这个环境提供了一些编写智能合约的模板。
 
 如果没有安装GitPod插件，可以直接在浏览器上新开一个页面，输入网址 https://gitpod.io/#https://github.com/xxxxx/eosforce-web-ide (其它xxxx替换成你的github用户名)
 
-![web-ide](images/ide_boot.png)
+![web-ide](https://github.com/ylic/eosforce-web-ide/raw/master/images/ide_boot.png)
 
 网页开始加载开发环境，第一次加载会比较慢，请稍等几分钟。
 
-![web-ide](images/web-ide.png)
+![web-ide](https://github.com/ylic/eosforce-web-ide/raw/master/images/web-ide.png)
 
 从图中可以看见，eosforce已经模拟正式环境启动了23个节点并且正在出块，同时整个编写智能合约的IDE环境已经搭建好，现在就可以使用web IDE直接开始开发智能合约了。
 
@@ -90,11 +90,11 @@ Gitpod对Chrome和Firefox都提供了插件支持，下载插件后，会使进�
 
 * 理清post方法的逻辑之后，就可以开始编译文件了，首先点击Gitpod上方导航栏的Terminal -> New Terminal(如下图)
 
-![terminal](images/terminal.png)
+![terminal](https://github.com/ylic/eosforce-web-ide/raw/master/images/terminal.png)
 
 可以看见Gitpod下方出现了一个新的命令行窗口
 
-![command](images/command.png)
+![command](https://github.com/ylic/eosforce-web-ide/raw/master/images/command.png)
 
 * 在该窗口执行如下命令，编译talk.cpp文件，会生成`talk.abi`和`talk.wasm`两个文件
 ```shell
@@ -300,7 +300,7 @@ tasks:                        # 初始化阶段的任务
 
 ## 欢迎加入 EOSC开发交流学习群
 
-![微信群名](images/weixin.png)
+![微信群名](https://github.com/ylic/eosforce-web-ide/raw/master/images/weixin.png)
 
 无法进群的同学，请添加 原力队长  微信号:EOSforce
 
