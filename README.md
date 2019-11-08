@@ -107,7 +107,7 @@ drwxr-xr-x 6 gitpod gitpod 4096 Nov  8 08:13 ../
 -rw-r--r-- 1 gitpod gitpod 1477 Nov  8 08:13 talk.cpp
 gitpod /workspace/eosforce-web-ide/contract/talk $
 gitpod /workspace/eosforce-web-ide/contract/talk $
-gitpod /workspace/eosforce-web-ide/contract/talk $ eosforce-cpp talk.cpp
+gitpod /workspace/eosforce-web-ide/contract/talk $ eosforce-cpp talk.cpp -o talk.wasm
 Warning, empty ricardian clause file
 Warning, empty ricardian clause file
 Warning, action <post> does not have a ricardian contract
